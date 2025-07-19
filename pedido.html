@@ -5,38 +5,38 @@
   <meta charset="UTF-8">
   <title>Pedido | Casa Bistro Bosque</title>
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="images/inicio.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/inicio.png">
 </head>
 <body>
-<div id="user-info" style="margin-bottom: 20px;">
-  <h3>Datos del cliente:</h3>
-  <p><strong>Nombre:</strong> <span id="nombreUsuario"></span></p>
-  <p><strong>Departamento:</strong> <span id="departamentoUsuario"></span></p>
-</div>
+  <header>
+    <h1>Resumen del Pedido</h1>
+    <nav>
+      <a href="menu.html">Menú</a>
+      <a href="index.html">Inicio</a>
+    </nav>
+  </header>
+  <div class="container">
+    <table id="cartTable">
+      <thead>
+        <tr>
+          <th>Artículo</th>
+          <th>Precio</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <div class="pago">
+      <div class="total">Total: <span id="total">$0.00</span></div>
+      <a class="pay-btn" href="#" onclick="enviarPedido()">Pagar</a>
 
-<header>
-  <h1>Resumen del Pedido</h1>
-  <nav>
-    <a href="menu.html">Menú</a>
-    <a href="index.html">Inicio</a>
-  </nav>
-</header>
-<div class="container">
-  <table id="cartTable">
-    <thead>
-      <tr><th>Artículo</th><th>Precio</th><th></th></tr>
-    </thead>
-    <tbody></tbody>
-  </table>
-  <div class="total">Total: <span id="total">$0.00</span></div>
-  <a class="pay-btn" href="https://clip.mx/@casabistroolivia.com" target="_blank">Pagar con Clip</a>
-</div>
-<script src="js/pedido.js"></script>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('nombreUsuario').innerText = localStorage.getItem('nombre') || 'No registrado';
-    document.getElementById('departamentoUsuario').innerText = localStorage.getItem('departamento') || 'No registrado';
-  });
-</script>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="js/pedido.js"></script>
 </body>
 </html>

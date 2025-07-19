@@ -181,15 +181,47 @@ function updateCartCounter() {
 
 function addToCart(name, price) {
   const cart = loadCart();
-  cart.push({name, price});
+  cart.push({ name, price });
   saveCart(cart);
   updateCartCounter();
-  alert(`${name} añadido al carrito`);
+
+  Swal.fire({
+    title: 'Producto añadido',
+    text: `"${name}" ha sido añadido al carrito`,
+    icon: 'success',
+    background: '#fefbf6',
+    color: '#183D2D',
+    confirmButtonColor: '#183D2D',
+    confirmButtonText: 'Aceptar',
+    customClass: {
+      popup: 'swal-bosque'
+    }
+  });
 }
+
 
 document.addEventListener('DOMContentLoaded', () => {
   if (document.getElementById('menuContainer')) {
     renderMenu();
   }
   updateCartCounter();
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const cards = document.querySelectorAll('.card');
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('fade-in');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.1
+  });
+
+  cards.forEach(card => {
+    observer.observe(card);
+  });
 });

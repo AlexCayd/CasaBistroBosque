@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  font-family: "Lexend", sans-serif;
+  background-color: #fefbf6;
+  color: #183D2D;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #183D2D;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #FF6B00;
+}
+
+.cart-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.cart-box {
+  width: 100%;
+  max-width: 800px;
+  background-color: #fff;
+  border-radius: 18px;
+  padding: 2rem;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.05);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+}
+
+th {
+  text-align: left;
+  padding: 0.75rem;
+  font-size: 1rem;
+  color: #6c6c6c;
+  border-bottom: 2px solid #eee;
+}
+
+td {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+td button {
+  background-color: #FF6B00;
+  border: none;
+  color: white;
+  padding: 0.4rem 0.75rem;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+td button:hover {
+  background-color: #d95b00;
+}
+
+.total {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: right;
+  color: #183D2D;
+  margin-bottom: 1.5rem;
+}
+
+.pay-btn {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background: #183D2D;
+  color: #fff;
+  padding: 10px 40px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.pay-btn:hover {
+  background: #14523e;
+}

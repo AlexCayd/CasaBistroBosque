@@ -22,7 +22,7 @@ body {
 .header__titulo {
     font-size: 48px;
     line-height: 1.2;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     opacity: 0;
     animation: fadeInUp 1.2s ease-out forwards;
     animation-delay: 0.2s;
@@ -31,6 +31,7 @@ body {
 @media screen and (min-width: 768px) {
     .header__titulo {
         font-size: 84px;
+        margin-bottom: 30px;
     }
 }
 
@@ -40,7 +41,7 @@ a {
 
 .btn {
     background-color: #fff4da;
-    font-size: 16px;
+    font-size: 20px;
     color: #183D2D;
     padding: 14px 48px;
     border-radius: 8px;
