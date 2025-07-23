@@ -11,19 +11,19 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
   <link rel="icon" href="images/inicio.png">
-  
-  <style>
-      body {
-        font-family: "Lexend", sans-serif;
-      }
-  </style>
 </head>
 <body>
+  <section class="heromenu">
+      <h3 class="heromenu__heromenutxt">Casa Bistro Bosque</h3>
+  </section>
   <header>
-    <h1>Menú</h1>
+    <h1 class="header__titulo">Menú</h1>
     <nav>
-      <a href="index.html">Inicio</a>
-      <a href="pedido.html">Pedido <span id="cartCounter" class="cart-counter">0</span></a>
+      <a href="pedido.html" class="cart-link">
+        <img src="images/menu.svg" alt="icono menu" class="nav__icono">
+        <span id="cartCounter" class="cart-counter">0</span>
+      </a>
+
     </nav>
   </header>
   <div class="container" id="menuContainer">

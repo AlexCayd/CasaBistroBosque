@@ -1,3 +1,13 @@
+// HEADER
+window.addEventListener('scroll', function () {
+    const header = document.querySelector('header');
+    if (window.scrollY > 10) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  });
+
 const menuData = {
   "desayunos": [
     ["Hot cakes", "Esponjosos, servidos con miel de maple y fruta fresca de temporada", 130, "hot-cakes"],
