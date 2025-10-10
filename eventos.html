@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta property="og:image" content="https://casabosquebistro.com/images/inicio.png">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/eventos.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
@@ -14,15 +15,17 @@
 </head>
 <body>
   <section class="heromenu">
-      <h3 class="heromenu__heromenutxt">Casa Bistro Bosque</h3>
+      <h3 class="heromenu__heromenutxt">Próximos Eventos</h3>
   </section>
   <header>
-    <h1 class="header__titulo">Menú</h1>
+    <a class="header__enlace" href="menu.html">
+        <h1 class="header__titulo">Menú</h1>
+    </a>
 
     <a href="/">
       <img src="images/logo.jpg" alt="Logo" class="header__logo">
     </a>
-    
+
     <nav>
       <a href="pedido.html" class="cart-link">
         <img src="images/menu.svg" alt="icono menu" class="nav__icono">
@@ -30,12 +33,30 @@
       </a>
     </nav>
   </header>
-  
-  <div class="container" id="menuContainer">
-    <!-- Se genera dinámicamente -->
-  </div>
 
-  <a href="index.html" class="btn-volver">Volver al Inicio</a>
+  <main class="eventos">
+      <div class="evento">
+          <h2 class="evento__titulo">MLB — World Series (Serie Mundial)</h2>
+          <h3 class="evento__fecha">Desde el viernes 24 de octubre</h3>
+      </div>
+
+      <div class="evento">
+          <h2 class="evento__titulo">Fórmula 1 — United States Grand Prix (Austin, COTA)</h2>
+          <h3 class="evento__fecha">Fin de semana del 17 al 19 de octubre</h3>
+      </div>
+
+      <div class="evento">
+          <h2 class="evento__titulo">Fórmula 1 — Mexico City Grand Prix (CDMX)</h2>
+          <h3 class="evento__fecha">Del 23 al 26 de octubre</h3>
+      </div>
+
+      <div class="evento">
+          <h2 class="evento__titulo">NBA — Temporada 2025–26</h2>
+          <h3 class="evento__fecha">Opening Night: martes 21 de octubre</h3>
+      </div>
+  </main>
+
+  <a href="menu.html" class="btn-volver">Ir al menú</a>
 
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="js/menu.js"></script>

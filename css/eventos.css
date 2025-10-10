@@ -1,0 +1,74 @@
+.evento:nth-child(1) {
+    background-image: url(../images/eventos/evento1.jpg);
+}
+
+.evento:nth-child(2) {
+    background-image: url(../images/eventos/evento2.jpg);
+}
+
+.evento:nth-child(3) {
+    background-image: url(../images/eventos/evento3.jpg);
+}
+
+.evento:nth-child(4) {
+    background-image: url(../images/eventos/evento4.jpg);
+}
+
+.eventos {
+    height: 80vh;
+}
+
+.evento {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    position: relative;
+    padding: 20px;
+}
+
+.evento::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.evento__titulo,
+.evento__fecha {
+    position: relative;
+    z-index: 2;
+}
+
+.evento__titulo {
+    font-size: 32px;
+    text-align: center;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {  
+    .evento__titulo {
+        font-size: 64px;
+    }
+}
+
+.evento__fecha {
+    font-size: 18px;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {  
+    .evento__fecha {
+        font-size: 32px;
+    }
+}

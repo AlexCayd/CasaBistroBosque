@@ -160,7 +160,7 @@ function renderMenu() {
       const card = document.createElement('div');
       card.className = 'card';
       card.innerHTML = `
-        <img src="images/${img}.jpg" alt="${name}" onerror="this.src='images/placeholder.jpg'">
+        <img loading="lazy" src="images/${img}.jpg" alt="${name}" onerror="this.src='images/placeholder.jpg'">
         <div class="card-content">
           <h4>${name}</h4>
           <p>${desc}</p>
