@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <title>Pedido | Casa Bistro Bosque</title>
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/pedido.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta property="og:image" content="https://casabosquebistro.com/images/inicio.png">
   <link rel="icon" href="images/inicio.png">
@@ -24,13 +25,15 @@
     <table id="cartTable">
       <thead>
         <tr>
-          <th>Artículo</th>
+          <th>Imagen</th>
+          <th>Producto</th>
           <th>Precio</th>
-          <th>Acciones</th>
+          <th>Acción</th>
         </tr>
       </thead>
       <tbody></tbody>
     </table>
+
     <div class="pago">
       <div class="total">Total: <span id="total">$0.00</span></div>
       <a class="pay-btn" href="#" onclick="enviarPedido()">Pagar</a>
@@ -38,6 +41,6 @@
     </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <script src="js/pedido.js"></script>
+  <script src="js/menu.js"></script>
 </body>
 </html>
