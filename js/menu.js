@@ -126,7 +126,7 @@ const menuData = {
     ["Tocino", "Crujiente tocino dorado al sartén, extra sabroso", 55, "tocino"],
     ["Queso de cabra", "Suave, cremoso y ligeramente ácido, ideal para ensaladas", 55, "queso-de-cabra"],
     ["Queso manchego", "Queso fundido o en láminas, sabor suave y versátil", 55, "queso-manchego"],
-    ["Queso panela", "Panela fresco en cubos o rebanado, ligero y saludable", 50, "queso-panela"],
+    ["Queso panela", "Panela fresco en cubos o rebanado, ligero y saludable", 55, "queso-panela"],
     ["Queso feta", "Queso griego desmoronado, ideal para dar sabor salado", 60, "queso-feta"],
     ["Jocoque", "Lácteo cremoso de sabor ácido, excelente para bowls o pan", 45, "jocoque"],
     ["Guacamole extra", "Porción adicional de guacamole casero para acompañar tus platillos", 80, "guacamole-extra"],
