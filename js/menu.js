@@ -112,7 +112,10 @@ const menuData = {
     ["Smoothie", "Frutas congeladas licuadas con yogurt vegetal, textura espesa", 130, "smoothie"],
     ["Refresco", "330 ml, refresco embotellado en variedad de sabores", 55, "refresco"],
     ["Leche vegetal", "Soya, almendra o avena, para sustituir leche (+$10)", 20, "leche-vegetal"],
-    ["Bebida fría", "Opción servida con hielo (+$5)", 10, "bebida-fr-a"]
+    ["Bebida fría", "Opción servida con hielo (+$5)", 10, "bebida-fr-a"],
+    ["Vino por copa", "Selección de vino servido en copa, ideal para acompañar y realzar tus alimentos.", 100, "copa-vino"],
+    ["Vino por botella", "Botella completa de vino seleccionado, perfecta para compartir en una comida especial.", 1100, "botella-vino"],
+    ["Cerveza", "Variedad de cervezas comerciales bien frías, refrescantes y perfectas para cualquier platillo.", 90, "cerveza"],
   ],
 
   "extras": [
@@ -469,8 +472,8 @@ function enviarPedido() {
       </div>
 
       <div class="form-group">
-        <label class="swal2-label" for="swal-telefono">Teléfono:</label>
-        <input id="swal-telefono" class="swal2-input" placeholder="Número de contacto">
+        <label class="swal2-label" for="swal-telefono">Especificaciones:</label>
+        <input type="text" id="swal-telefono" class="swal2-input" placeholder="Tus comentarios serán leídos en cocina">
       </div>
 
       <div class="form-group">
